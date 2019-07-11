@@ -6,7 +6,7 @@
   --main-zone: 920px;
   --active-color: rgb(153, 134, 117);
 }
-@media (max-width: 920px) {
+@media (max-width: 940px) {
   :root {
     --main-zone: 94%;
   }
@@ -263,6 +263,9 @@ header {
   }
 }
 @media (max-width: 700px) {
+  .slider-arrows {
+    bottom: 350px;
+  }
   .slider-arrows img {
     width: 20px;
   }

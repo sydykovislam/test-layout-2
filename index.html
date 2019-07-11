@@ -13,21 +13,21 @@
   <body>
     <div class="backdrop"></div>
     <nav>
-      <div class="nav">
+      <div class="nav" id="home">
         <a href="#" class="brand">
           <img src="./accets/images/logo.png" alt="" />
           Waxom
         </a>
         <div class="nav-tools">
           <ul class="navul">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Shortcodes</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#video">Features</a></li>
+            <li><a href="#recent">Blog</a></li>
+            <li><a href="#mobile">Pricing</a></li>
+            <li><a href="#illustr">Shortcodes</a></li>
+            <li><a href="#footer">Contact</a></li>
           </ul>
           <div class="nav-icons">
             <a href="#"
@@ -49,11 +49,11 @@
         </div>
       </div>
       <ul class="sm-navul">
-        <li><a onfocus href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Work</a></li>
+        <li><a onfocus href="#home">Home</a></li>
+        <li><a href="#about-us">About</a></li>
+        <li><a href="#projects">Work</a></li>
         <li><a href="#">Team</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#">Features</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
@@ -158,7 +158,7 @@
       </div>
     </header>
     <main>
-      <div class="activities">
+      <section class="activities" id="about-us">
         <div class="activity">
           <i class="icon-pencil-alt"></i>
           <h2>Development</h2>
@@ -195,8 +195,8 @@
           </p>
           <span></span>
         </div>
-      </div>
-      <div class="ideas">
+      </section>
+      <section class="ideas" id="services">
         <h2>Waxom is Realization of your ideas</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut in, amet
@@ -219,8 +219,8 @@
             alt=""
           />
         </div>
-      </div>
-      <div id="rate">
+      </section>
+      <section id="rate">
         <div style="align-items: center;height: 100%" class="rate">
           <div>
             <h2>Waxom Multipurpose WordPress Theme</h2>
@@ -228,8 +228,8 @@
           </div>
           <button class="button">purchase now</button>
         </div>
-      </div>
-      <div id="projects">
+      </section>
+      <section id="projects">
         <h2 style="font-weight: 500">Our Latest Projects</h2>
         <p style="color: gray">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni optio
@@ -242,7 +242,7 @@
           <li onclick="switchProj(3)">Illustration</li>
           <li onclick="switchProj(4)">Photography</li>
         </ul>
-      </div>
+      </section>
       <section class="projects-images">
         <div class="proj-type base">
           <div class="proj">
@@ -418,7 +418,7 @@
           Load more
         </button>
       </section>
-      <section class="video">
+      <section class="video" id="video">
         <button class="icon-play">
           <img src="./accets/images/icon-play.png" alt="" />
         </button>
@@ -497,7 +497,7 @@
           </div>
         </div>
       </section>
-      <section class="recent">
+      <section class="recent" id="recent">
         <h2 style="font-weight: 500">Recent Posts</h2>
         <p class="main-p" style="color: gray">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni optio
@@ -633,8 +633,10 @@
             <h2 class="prefH2">Our Twitter</h2>
             <div>
               <p class="prefP">
-                <strong>@waxom</strong> ipsum dolor sit amet consectetur
-                adipisicing elit.
+                <a href="#" style="text-decoration: none"
+                  ><strong>@waxom</strong></a
+                >
+                ipsum dolor sit amet consectetur adipisicing elit.
               </p>
               <p class="prefdate">3 mins ago</p>
             </div>
@@ -642,8 +644,12 @@
               <hr class="prefHr" />
               <div>
                 <p class="prefP">
-                  Lorem ipsum <strong>#dolor</strong> sit amet consectetur
-                  adipisicing elit amet consectetur adipisicing
+                  Lorem ipsum
+                  <a href="#" style="text-decoration: none"
+                    ><strong>#dolor</strong></a
+                  >
+                  sit amet consectetur adipisicing elit amet consectetur
+                  adipisicing
                 </p>
                 <p class="prefdate">3 hours ago</p>
               </div>
@@ -668,7 +674,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer id="footer">
       <div class="footer base">
         <div>
           <p>
