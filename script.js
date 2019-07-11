@@ -46,16 +46,10 @@ let navOpened = false;
 let openMenu = () => {
   if (!navOpened) {
     nav.className = "sm-navul sm-navul-opened";
-    navbar1.className = "bar bar-open-1";
-    navbar2.className = "bar bar-open-2";
-    navbar3.className = "bar bar-open-3";
     backdrop.className = "backdrop backdrop-active";
     navOpened = true;
   } else {
     nav.className = "sm-navul";
-    navbar1.className = "bar bar-close-1";
-    navbar2.className = "bar bar-close-2";
-    navbar3.className = "bar bar-close-3";
     backdrop.className = "backdrop";
     navOpened = false;
   }
@@ -139,6 +133,11 @@ for (let anchor of anchors) {
         behavior: "smooth",
         block: "start"
       });
+    }
+    if (navOpened) {
+      nav.className = "sm-navul";
+      backdrop.className = "backdrop";
+      navOpened = false;
     }
   });
 }

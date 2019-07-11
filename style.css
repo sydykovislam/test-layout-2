@@ -111,23 +111,24 @@ nav {
 }
 .sm-navul {
   list-style: none;
-  display: none;
-  background-color: rgb(145, 113, 100);
+
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  background-color: #191919;
   right: -100%;
   position: absolute;
-  transition: all 0.4s;
-  width: 0px;
+  overflow: hidden;
   z-index: 99;
   height: 100vh;
+  transition: all 0.4s;
+  width: 0px;
 }
 .sm-navul-opened {
-  display: flex;
   position: fixed;
   right: 0;
   display: flex;
   width: 300px;
-  flex-direction: column;
-  justify-content: center;
 }
 .sm-navul li {
   text-align: center;
@@ -374,7 +375,7 @@ header {
   flex-wrap: wrap;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   .activities {
     justify-content: space-around;
   }
@@ -523,7 +524,7 @@ header {
   margin: 0 auto;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 940px) {
   .rate {
     justify-content: space-around;
   }
