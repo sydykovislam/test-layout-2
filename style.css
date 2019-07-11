@@ -1150,6 +1150,9 @@ footer {
   font-size: 11.5px;
   font-weight: 600;
 }
+.footer a:hover {
+  color: var(--active-color);
+}
 .footer span {
   display: inline-block;
   margin: 0px 4px;
