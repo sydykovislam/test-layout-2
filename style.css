@@ -17,6 +17,9 @@ html {
 
   overflow-x: hidden;
 }
+section {
+  overflow-x: hidden;
+}
 /* NAVIGATION */
 nav {
   display: flex;
@@ -1126,15 +1129,15 @@ header {
 }
 /* FOOTER */
 footer {
-  padding: 45px;
+  padding: 20px;
   background-color: #111111;
 }
 .footer {
   align-items: center;
 }
 .footer div {
-  width: 330px;
-  margin: 20px 0px;
+  min-width: 225px;
+  margin: 10px 0px;
 }
 .footer p {
   color: gray;
@@ -1153,4 +1156,10 @@ footer {
   width: 1px;
   background-color: gray;
   height: 10px;
+}
+@media (max-width: 550px) {
+  footer {
+    padding: 15px;
+    background-color: #111111;
+  }
 }
