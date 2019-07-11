@@ -192,16 +192,36 @@ header {
 .img {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 820px;
   overflow: hidden;
 }
 .img img {
-  width: 1520px;
-  height: auto;
+  width: 100%;
+  height: 100%;
   margin: 0px auto;
 }
 
+.img {
+  background-size: cover;
+  background-position: center;
+}
+.img-1 {
+  background-image: url(./accets/images/header-images/photo1.jfif);
+}
+.img-2 {
+  background-image: url(./accets/images/photo.png);
+}
+.img-3 {
+  background-image: url(./accets/images/header-images/photo3.jfif);
+}
+.img-4 {
+  background-image: url(./accets/images/header-images/photo4.jfif);
+}
+.img-5 {
+  background-image: url(./accets/images/header-images/photo5.jfif);
+}
 .header-content {
   display: flex;
   position: absolute;
@@ -211,14 +231,20 @@ header {
   color: white;
   height: 230px;
 }
-.header-content h2 {
+.prehead {
   font-size: 30px;
   font-weight: 400;
+  margin: 0px 0px 5px;
+  text-align: center;
 }
-.header-content h1 {
+.headP {
   font-size: 40px;
+  line-height: 40px;
+  margin: 0px 0px 3px;
+  font-weight: 700;
+  text-align: center;
 }
-.header-content p {
+.posthead {
   font-size: 14px;
   width: 500px;
   line-height: 20px;
@@ -265,22 +291,22 @@ header {
 }
 @media (max-width: 700px) {
   .slider-arrows {
-    bottom: 350px;
+    bottom: 320px;
   }
   .slider-arrows img {
     width: 20px;
   }
-  .header-content h2 {
+  .prehead {
     font-size: 20px;
   }
-  .header-content h1 {
+  .headP {
     font-size: 30px;
   }
 
-  .header-content p {
+  .posthead {
     font-size: 13px;
 
-    margin: 10px auto 10px;
+    margin: 10px auto 30px;
   }
 }
 @media (max-width: 500px) {
@@ -289,19 +315,19 @@ header {
     bottom: 100px;
   }
   .slider-arrows {
-    bottom: 175px;
+    bottom: 290px;
   }
   .header-content {
     justify-content: space-between;
     height: 220px;
   }
-  .header-content h2 {
+  .prehead {
     font-size: 20px;
   }
-  .header-content h1 {
+  .headP {
     font-size: 30px;
   }
-  .header-content p {
+  .posthead {
     font-size: 13px;
     width: 75%;
   }
@@ -328,17 +354,21 @@ header {
   .slider-arrows img {
     width: 20px;
   }
-  .header-content h2 {
+  .prehead {
     font-size: 20px;
   }
-  .header-content h1 {
+  .headP {
     font-size: 25px;
   }
-  .header-content p {
+  .posthead {
     font-size: 13px;
     width: 75%;
   }
 }
+.slider-arrows {
+  bottom: 170px;
+}
+
 .slider-arrows img {
   height: 60px;
 }
