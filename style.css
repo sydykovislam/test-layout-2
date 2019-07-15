@@ -306,7 +306,7 @@ header {
 
   .posthead {
     font-size: 13px;
-
+    width: 90%;
     margin: 10px auto 30px;
   }
 }
