@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./accets/fontello-68af0f9c/css/fontello.css" />
     <script src="https://kit.fontawesome.com/b12f07435f.js"></script>
-    <title>Newmaket</title>
+    <title>Waxom</title>
   </head>
   <body>
     <div class="backdrop"></div>
@@ -33,7 +33,9 @@
             <a href="#"
               ><img src="./accets/images/icons/icon-cart.png" alt=""
             /></a>
-            <button style="background-color: transparent; border: none">
+            <button
+              style="background-color: transparent; border: none; cursor: pointer"
+            >
               <img
                 src="./accets/images/icons/icon-search.png"
                 class="search-icon"
@@ -152,13 +154,13 @@
           <span></span>
         </div>
         <div class="activity">
-          <i class="icon-buffer-active"></i>
-          <h2 class="active-activity">Development</h2>
+          <i class="icon-buffer"></i>
+          <h2 class="">Development</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
             similique necessitatibus nulla
           </p>
-          <span class="active-span-activity"></span>
+          <span class=""></span>
         </div>
         <div class="activity">
           <i class="icon-cog"></i>
@@ -486,7 +488,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni optio
           dignissimos explicabo culpa, pariatur perferendis earum veniam?
         </p>
-        <div class="recent-images base">
+        <div class="recent-images base recent-images-0">
           <div class="proj recentpost">
             <div class="recent-img">
               <img src="./accets/images/recent/photo1.png" alt="" />
@@ -555,9 +557,86 @@
             </div>
           </div>
         </div>
+        <div class="recent-images base recent-images-1">
+          <div class="proj recentpost">
+            <div class="recent-img">
+              <img src="./accets/images/recent/photo1.png" alt="" />
+              <div class="dark"></div>
+              <div class="date">
+                <p class="date-num">31</p>
+                <p class="date-month">Aug.</p>
+              </div>
+            </div>
+
+            <div class="recent-des">
+              <h3>Recent Post (second page)</h3>
+              <p>
+                Description of post Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. .
+              </p>
+              <a href="#" class="read-more">
+                <P>Read More</P>
+                <img src="./accets/images/arrow.png" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="proj recentpost">
+            <div class="recent-img">
+              <img src="./accets/images/recent/photo2.png" alt="" />
+              <div class="dark"></div>
+              <div class="date">
+                <p class="date-num">31</p>
+                <p class="date-month">Aug.</p>
+              </div>
+            </div>
+
+            <div class="recent-des">
+              <h3>Recent Post (second page)</h3>
+              <p>
+                Description of post Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. .
+              </p>
+              <a href="#" class="read-more">
+                <P>Read More</P>
+                <img src="./accets/images/arrow.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="proj recentpost">
+            <div class="recent-img">
+              <img src="./accets/images/recent/photo3.png" alt="" />
+              <div class="dark"></div>
+              <div class="date">
+                <p class="date-num">31</p>
+                <p class="date-month">Aug.</p>
+              </div>
+            </div>
+
+            <div class="recent-des">
+              <h3>Recent Post (second page)</h3>
+              <p>
+                Description of post Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. .
+              </p>
+              <a href="#" class="read-more">
+                <P>Read More</P>
+                <img src="./accets/images/arrow.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
         <div class="recent-controls">
-          <img src="./accets/images/recent/left.png" alt="" />
-          <img src="./accets/images/recent/right.png" alt="" />
+          <img
+            src="./accets/images/recent/left.png"
+            alt=""
+            onclick="switchRecents(0)"
+          />
+          <img
+            src="./accets/images/recent/right.png"
+            alt=""
+            onclick="switchRecents(1)"
+          />
         </div>
       </section>
       <section id="illustr">
@@ -659,7 +738,7 @@
     </main>
     <footer id="footer">
       <div class="footer base">
-        <div>
+        <div class="footer-bar">
           <p>
             Allrighting © 2020<a
               href="#"
@@ -667,14 +746,17 @@
             >
               Waxom</a
             >
-
-            <span></span>
-            <a href="#">Privacy Policy</a>
-            <span></span>
-            <a href="#">FAQ</a>
-            <span></span>
-            <a href="#">Support</a>
           </p>
+          <p>
+            <span class="footer-br"></span>
+          <a href="#">Privacy Policy</a>
+          <span></span>
+          <a href="#">FAQ</a>
+          <span></span>
+          <a href="#">Support</a>
+          </a>
+          </p>
+          
         </div>
         <div>
           <p>

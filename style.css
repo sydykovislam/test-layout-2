@@ -262,6 +262,7 @@ header {
   border: none;
   border-bottom: 2px solid rgb(115, 99, 86);
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .fade {
@@ -350,7 +351,12 @@ header {
   .img {
     height: 590px;
   }
-
+  .brand img {
+    width: 40px;
+  }
+  .brand {
+    font-size: 25px;
+  }
   .slider-arrows img {
     width: 20px;
   }
@@ -359,18 +365,23 @@ header {
   }
   .headP {
     font-size: 25px;
+    width: 90%;
+    margin: 0px auto 3px;
+    line-height: 28px;
   }
   .posthead {
     font-size: 13px;
     width: 75%;
+    margin: 10px auto 20px;
   }
-}
-.slider-arrows {
-  bottom: 170px;
+  .slider-arrows {
+    bottom: 170px;
+  }
 }
 
 .slider-arrows img {
   height: 60px;
+  cursor: pointer;
 }
 .slider-switcher {
   width: 80px;
@@ -439,14 +450,14 @@ header {
   height: 3px;
   background-color: rgba(153, 134, 117, 0.5);
 }
-.active-span-activity {
-  background-color: rgb(153, 134, 117) !important;
-}
-.active-line-span {
-  background-color: var(--active-color);
-}
-.active-activity {
+.activity:hover h2 {
   color: var(--active-color);
+}
+.activity:hover i::before {
+  color: var(--active-color);
+}
+.activity:hover span {
+  background-color: rgb(153, 134, 117) !important;
 }
 
 /* IDEAS */
@@ -578,7 +589,7 @@ header {
   color: white;
   font-weight: 600;
   text-transform: uppercase;
-
+  cursor: pointer;
   width: 135px;
   height: 42px;
   background-color: var(--active-color);
@@ -864,7 +875,7 @@ header {
     width: 310px;
   }
   .mob-des ul {
-    padding-left: 30px;
+    padding-left: 20px;
   }
 }
 
@@ -1170,7 +1181,6 @@ footer {
   align-items: center;
 }
 .footer div {
-  min-width: 225px;
   margin: 10px 0px;
 }
 .footer p {
@@ -1194,6 +1204,18 @@ footer {
   background-color: gray;
   height: 10px;
 }
+.footer-br {
+  margin-left: 10px !important;
+}
+.footer-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.footer-bar div {
+  width: 200px !important;
+}
 @media (max-width: 550px) {
   footer {
     padding: 15px;
@@ -1201,5 +1223,23 @@ footer {
   }
   .footer p {
     text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer-bar p {
+    line-height: 23px;
+  }
+}
+@media (max-width: 395px) {
+  .footer-br {
+    margin-left: 0px !important;
+  }
+
+  .footer-bar p {
+    margin: 0px 3px;
   }
 }

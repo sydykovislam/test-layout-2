@@ -58,47 +58,47 @@ let openMenu = () => {
 navButton.addEventListener("click", openMenu);
 backdrop.addEventListener("click", openMenu);
 
-let activities = document.querySelectorAll(".activity");
-console.log(activities[0].children[0].className);
+// let activities = document.querySelectorAll(".activity");
+// console.log(activities[0].children[0].className);
 
-function noneActiveActivity(activity) {
-  // let noneActiveClass = activity.children[0].className + "-active";
-  activity.children[1].className = "";
-  activity.children[3].className = "";
-  activity.children[0].className = activity.children[0].className.replace(
-    "-active",
-    ""
-  );
-}
-function checkActiveOfActivity(string) {
-  if (string.indexOf("-active") > -1) {
-    return true;
-  } else {
-    return false;
-  }
-}
-activities.forEach(function(el) {
-  el.addEventListener("click", function() {
-    activities.forEach(function(activ) {
-      noneActiveActivity(activ);
-    });
+// function noneActiveActivity(activity) {
+//   // let noneActiveClass = activity.children[0].className + "-active";
+//   activity.children[1].className = "";
+//   activity.children[3].className = "";
+//   activity.children[0].className = activity.children[0].className.replace(
+//     "-active",
+//     ""
+//   );
+// }
+// function checkActiveOfActivity(string) {
+//   if (string.indexOf("-active") > -1) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// activities.forEach(function(el) {
+//   el.addEventListener("click", function() {
+//     activities.forEach(function(activ) {
+//       noneActiveActivity(activ);
+//     });
 
-    let activeClass = "";
-    let active = checkActiveOfActivity(el.children[0].className);
-    if (active) {
-      activeClass = el.children[0].className;
-      console.log("yes, active");
-    } else {
-      activeClass = activeClass = el.children[0].className + "-active";
-      console.log("no");
-    }
+//     let activeClass = "";
+//     let active = checkActiveOfActivity(el.children[0].className);
+//     if (active) {
+//       activeClass = el.children[0].className;
+//       console.log("yes, active");
+//     } else {
+//       activeClass = activeClass = el.children[0].className + "-active";
+//       console.log("no");
+//     }
 
-    el.children[1].className = "active-activity";
-    el.children[3].className = "active-span-activity";
+//     el.children[1].className = "active-activity";
+//     el.children[3].className = "active-span-activity";
 
-    el.children[0].className = `${activeClass}`;
-  });
-});
+//     el.children[0].className = `${activeClass}`;
+//   });
+// });
 
 let projMenu = document.querySelectorAll(".proj-menu li");
 let projTypes = document.querySelectorAll(".proj-type");
@@ -115,6 +115,17 @@ function switchProj(num) {
 }
 
 switchProj(0);
+
+let recents = document.querySelectorAll(".recent-images");
+console.log(recents);
+function switchRecents(num) {
+  recents.forEach(el => {
+    el.style.display = "none";
+  });
+  recents[num].style.display = "flex";
+}
+
+switchRecents(0);
 
 const anchors = document.querySelectorAll('a[href*="#"]');
 for (let anchor of anchors) {
