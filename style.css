@@ -79,9 +79,12 @@ nav {
   font-size: 13px;
 }
 .navul li a:focus {
-  color: var(--active-color);
+  color: var(--active-color) !important;
 }
 
+.navul li a:hover {
+  color: rgb(180, 179, 179);
+}
 .menu-icon {
   width: 35px;
   height: 35px;
@@ -383,6 +386,10 @@ header {
 .slider-arrows img {
   height: 60px;
   cursor: pointer;
+  filter: grayscale(100%);
+}
+.slider-arrows img:hover {
+  filter: none;
 }
 .slider-switcher {
   width: 80px;
@@ -396,8 +403,8 @@ header {
   width: 8px;
   height: 8px;
   background-color: white;
-
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .active-dot {
@@ -643,10 +650,10 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@media (max-width: 450px) {
+@media (max-width: 470px) {
   .proj-menu {
     width: 90%;
-    justify-content: space-around;
+    justify-content: center;
   }
   .proj-menu li {
     margin: 5px 4px;
@@ -696,6 +703,9 @@ header {
   font-size: 25px;
   transition: all 0.2s;
   cursor: pointer;
+}
+.proj-img i:hover::before {
+  color: var(--active-color) !important;
 }
 .fa-link {
   left: 37%;
@@ -1006,9 +1016,10 @@ header {
   display: flex;
   align-items: center;
   text-decoration: none;
+  margin-left: 25px;
 }
 .read-more p {
-  margin: 0px 8px 3px 25px !important;
+  margin: 0px 8px 3px 0px !important;
   color: rgb(199, 178, 153);
   font-size: 12px !important;
 }
@@ -1044,6 +1055,9 @@ header {
 .recentpost:hover .recent-des p {
   color: white;
 }
+.recent-des a:hover p {
+  color: var(--active-color) !important;
+}
 .recentpost:hover .date-num {
   background-color: #c7b199;
 }
@@ -1054,8 +1068,12 @@ header {
   margin: 12px auto 60px;
 }
 .recent-controls img {
-  width: 18px;
+  width: 19px;
   cursor: pointer;
+  filter: grayscale(100%);
+}
+.recent-controls img:hover {
+  filter: none;
 }
 
 /* ILLUSTRATIONS  */
@@ -1115,11 +1133,18 @@ header {
 .pref-1 .read-more p {
   margin: 0px 8px 0px 0px !important;
   color: white;
-  font-weight: 500;
+  font-weight: 450;
   font-size: 12px !important;
 }
 .pref-1 .read-more img {
   margin: 0px 0px -3px 0px;
+}
+.pref-1 .read-more {
+  margin-left: 0px;
+  width: 74px;
+}
+.pref-1 .read-more:hover p {
+  color: var(--active-color);
 }
 
 [class^="pref-"] {
